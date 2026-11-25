@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WSU Critical Thinking Mid Exam</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>WSU – Critical Thinking Mid Exam</h1>
+    <p>Department of Civics and Ethical Studies</p>
+    <p>Freshman Students · Time Allowed: 20 Minutes</p>
+  </header>
+
+  <main class="container">
+
+    <section class="panel instructions">
+      <h2>Examination Instructions</h2>
+      <ul>
+        <li>Part I contains 5 True/False questions.</li>
+        <li>Part II contains 15 multiple-choice questions.</li>
+        <li>Choose one answer for each question.</li>
+        <li>The 20-minute timer starts when you click Start Exam.</li>
+        <li>The exam is submitted automatically when time runs out.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="startPanel">
+      <h2>Ready to begin?</h2>
+      <p>Click below when you are ready.</p>
+      <button class="primary" id="startBtn">
+        Start Exam
+      </button>
+    </section>
+
+    <section id="examArea" hidden>
+
+      <div class="exam-bar">
+        <div>
+          <strong>Time remaining</strong>
+          <div id="timer">20:00</div>
+        </div>
+
+        <div id="progress">Answered: 0 / 20</div>
+
+        <button class="danger" id="submitBtn">
+          Submit Exam
+        </button>
+      </div>
+
+      <form id="examForm">
+
+        <h2 class="part-heading">
+          Part I: Write TRUE or FALSE
+        </h2>
+
+        <div id="trueFalseQuestions"></div>
+
+        <h2 class="part-heading">
+          Part II: Choose the best answer
+        </h2>
+
+        <div id="multipleChoiceQuestions"></div>
+
+      </form>
+
+      <section class="panel">
+        <p>Review your answers before submitting.</p>
+        <button class="danger" id="submitBottom">
+          Submit Exam
+        </button>
+      </section>
+
+    </section>
+
+    <section id="result" class="panel" hidden></section>
+
+  </main>
+
+  <footer class="site-footer">
+    Made by Bayisa Tafese · Copyright © 2026 Bayisa Tafese. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

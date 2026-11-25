@@ -1,0 +1,181 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.55;
+  color: #172033;
+  background: #f1f5f9;
+}
+
+.site-header {
+  padding: 28px 16px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(120deg, #172554, #1d4ed8);
+}
+
+.site-header h1 {
+  margin: 0 0 8px;
+}
+
+.site-header p {
+  margin: 4px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 22px auto;
+  padding: 0 14px 28px;
+}
+
+.panel,
+.question {
+  margin: 16px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 3px 14px #0f172a12;
+}
+
+.instructions {
+  border-left: 5px solid #1d4ed8;
+}
+
+button {
+  padding: 12px 18px;
+  border: 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: .55;
+  cursor: not-allowed;
+}
+
+.primary {
+  color: white;
+  background: #1d4ed8;
+}
+
+.danger {
+  color: white;
+  background: #b91c1c;
+}
+
+.exam-bar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #0f172a20;
+}
+
+#timer {
+  color: #b91c1c;
+  font-size: 1.4rem;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+#progress {
+  color: #64748b;
+}
+
+.part-heading {
+  margin-top: 26px;
+  padding: 12px 15px;
+  color: #1e3a8a;
+  background: #dbeafe;
+  border-radius: 8px;
+}
+
+.question h3 {
+  margin: 0 0 14px;
+  font-size: 1.02rem;
+}
+
+.question-number {
+  color: #1d4ed8;
+  font-weight: bold;
+}
+
+.option {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background: #f8fafc;
+}
+
+.option input {
+  margin-top: 4px;
+  accent-color: #1d4ed8;
+}
+
+.correct {
+  color: #15803d;
+  font-weight: bold;
+}
+
+.incorrect {
+  color: #b91c1c;
+  font-weight: bold;
+}
+
+.review-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.score {
+  color: #15803d;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.small {
+  color: #64748b;
+}
+
+.site-footer {
+  padding: 22px 12px;
+  text-align: center;
+  color: #64748b;
+  font-size: .9rem;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 560px) {
+  .panel,
+  .question {
+    padding: 15px;
+  }
+
+  .exam-bar {
+    position: static;
+  }
+}
